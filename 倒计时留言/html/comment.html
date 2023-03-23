@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/message.ico">
+    <link rel="stylesheet" href="../css/com.css">
+    <title>到此一游</title>
+</head>
+<body>
+    <!--
+     留言板实现思路：
+      1.获取用户姓名与留言内容
+      2.判断值是否为空，如果为空，则提示信息
+      3.绑定提交按钮的点击事件
+      4.获取姓名，留言内容以及当前系统时间，拼接成指定的html标签
+      5.将标签追加到留言表中
+    -->
+    <!-- 布局：左边图片、留言，右边展示  -->
+
+    <div class="box">
+        <!-- 图片区 -->
+        <div class="picture">
+           <!-- 背景图片 -->
+
+           <!-- 留言输入 -->
+           <div class="user">
+            <!-- <div class="form-group"> -->
+                <ul>昵称：</ul>
+                <input type="text" style="width:200px"id="userName"/>
+            <!-- </div> -->
+            <!-- <div class="form-group"> -->
+                <ul>留言内容：</ul>
+                <textarea style="width: 202px; height: 70px;" id="content"></textarea>
+                <br>
+                <button class="btn" id="sendBtn" onclick="showMessage()">到此一游</button> 
+           <!-- </div> -->
+          </div>
+        </div>
+
+        <!-- 展示区 -->
+        <div class="mes-show" id="mes-shows">
+              <!-- 时间 名字  内容 -->
+            <div id="showing">
+                <!-- <div class="person">
+                    <span id="write-date">October 12, 2016</span>
+                    <h2 id="showName"><a href="#">name</a></h2>
+                    <p id="comments">&nbsp;&nbsp;&nbsp;&nbsp; How two simple exercises changed my life?</p>
+                </div> -->
+            </div> 
+            <div></div>
+        </div>
+        
+    </div>
+<script src="../js/com.js"></script>
+</body>
+</html>

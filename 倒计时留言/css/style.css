@@ -1,0 +1,123 @@
+/* 清除样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* 弹性布局 */
+    display: flex;
+    background-color: #202c3b;
+}
+
+.welcome {
+    width: 100%;
+    height: 200px;
+    margin: 70px;
+    margin-top: 100px;
+    position: relative;
+}
+.words, .time {
+    text-align: center;
+}
+
+/* 文字颜色设置 感觉有点呆*/
+h2 {
+    font-size: 4.5rem;
+    /* font-family: 'Creepster', cursive; */
+}
+
+#h-1 {
+    color: #ff5e01;
+}
+#h-2 {
+    color: #e9ab38;
+}
+
+#s-1,#s-2{
+    color: #e9ab38;
+}
+#s-3,#s-4 {
+    color: #ff5e01;
+}
+
+.comment {
+    height: 60px;
+}
+h4 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+a {
+    color: #ff5e01;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #fff;
+}
+.time {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.w {
+    border:5px solid #ff9900;
+    border-radius: 10px;
+}
+
+.one {
+    width: 100px;
+    font-size: 1.5rem;
+    line-height: 50px;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.wo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.container img {
+    width: 800px;
+    height: 760px;
+    /* 左浮动  后面向左移动 */
+    float: left;
+}
+
+.container {
+    animation: pictures 20s infinite linear;
+    font-size: 0px;
+}
+/* 关键帧 */
+@keyframes pictures {
+    0%,20%{
+        margin-left:0px;
+    }
+    20%,40%{
+        margin-left:-800px;
+    }
+    40%,60%{
+        margin-left:-1600px;
+    }
+    60%,80%{
+        margin-left:-2400px;
+    }
+    80%,100%{
+        margin-left:-3200px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}

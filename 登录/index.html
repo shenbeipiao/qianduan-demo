@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <title>登录</title>
+</head>
+<body>
+    <!-- 思路 -->
+    <!-- 两个页面状态，通过点击 滑动切换 账号登录 注册账号 -->
+    <!-- 这里的滑动切换是通过透明隐藏以达到预期效果 需要设置透明度 -->
+    <!-- 第一个状态直接登录，第二个状态注册-->
+    <!-- 页面布局 -->
+
+    <!-- 主体容器 -->
+    <div class="container">
+        <!-- 两个单页面 字和按钮 -->
+        <div class="switch-panel">  <!-- 此处需改变 -->
+            <!-- 登录 -->
+             <div id="login" class="switch-box switch-hidden"> 
+              <div class="title">Welcome Back !</div>
+            
+                 <button id="switch1">SIGN IN </button>
+             </div>
+
+            <!-- 注册 -->
+            <div id="register" class="switch-box">  <!-- 此处需改变 -->
+                <div class="title">Hello Friend !</div>
+                <p>Enter your person details and start journey with us</p>
+                <button id="switch2">SIGN IN</button>
+            </div>
+         </div>
+
+         <!-- section标签用于对页面内容分块 注册登录板块 -->
+         <section class="register-login-panel">    <!-- 此处section需改变 -->
+            <!-- 注册界面 -->
+            <section class="register switch-hidden-2"> 
+                <div class="content">
+                    <h2>Create Account</h2>
+                    <div class="icons">
+                        <i class="iconfont icon-QQ"></i>
+                        <i class="iconfont icon-weixin"></i>
+                        <i class="iconfont icon-weibo"></i>
+                    </div>
+                    <span>or use email for registeration</span>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <button>SIGN UP</button>
+                </div>
+            </section>
+
+            <!-- 登录界面 -->
+            <section class="login">    <!-- 此处section需改变 -->
+                <div class="content">
+                    <h2>Sign in to Website</h2>
+                    <div class="icons">
+                        <!-- 其他方式登录（跳转授权登录）  暂未实现 -->
+                        <i class="iconfont icon-QQ"></i>
+                        <i class="iconfont icon-weixin"></i>
+                        <i class="iconfont icon-weibo"></i>
+                    </div>
+                    <span>or use email for registeration</span>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <!-- 找回密码功能 暂未实现 -->
+                    <span>Forgot your password?</span>
+                    <button>SIGN IN</button>
+                </div>
+            </section>
+        </section>
+
+    </div>
+  
+</body>
+
+<script src="script.js"></script>
+</html>
