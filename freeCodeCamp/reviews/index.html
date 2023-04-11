@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龙族人物志</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+    <main>
+        <section class="container">
+            <!-- 标题区 -->
+            <div class="title">
+                <h2>龙族</h2>
+                <!-- 下边框通过盒子实现 -->
+                <div class="underline"></div>
+            </div>
+            <!-- 主要人物模块 -->
+            <article class="review">
+                <div class="img-container">
+                    <!-- 头像 -->
+                    <img src="first.png" id="person-img" alt=""/>
+                </div>
+                <!-- 描述 名字 工作 -->
+                <h4 id="author">李嘉图</h4>
+                <p id="job">屠龙少年</p>
+                <p id="info">
+                     路明非只有四分之一。
+                </p>
+                <!-- 箭头按钮区 -->
+                <div class="button-container">
+                    <!-- 字体图标 -->
+                    <button class="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button class="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                </div>
+                <!-- 随机区域 -->
+                <button class="random-btn">surprise me</button>
+            </article>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
